@@ -16,7 +16,7 @@ Used cached repos when possible:
 cargo build
 ```
 
-Updates all remotes
+Updates all remotes:
 
 ```
 cargo -u build
