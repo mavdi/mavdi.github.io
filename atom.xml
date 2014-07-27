@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Man Learning]]></title>
+  <title><![CDATA[ManLearning]]></title>
   <link href="http://mavdi.github.io/atom.xml" rel="self"/>
   <link href="http://mavdi.github.io/"/>
-  <updated>2014-07-27T22:38:42+01:00</updated>
+  <updated>2014-07-27T22:39:30+01:00</updated>
   <id>http://mavdi.github.io/</id>
   <author>
     <name><![CDATA[Mehdi Avdi]]></name>
