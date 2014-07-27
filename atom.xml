@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Man Learning]]></title>
   <link href="http://mavdi.github.io/atom.xml" rel="self"/>
   <link href="http://mavdi.github.io/"/>
-  <updated>2014-07-26T20:05:46+01:00</updated>
+  <updated>2014-07-27T22:36:02+01:00</updated>
   <id>http://mavdi.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Mehdi Avdi]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Cargo and cached remotes]]></title>
+    <link href="http://mavdi.github.io/blog/2014/07/27/cargo-and-cached-remotes/"/>
+    <updated>2014-07-27T21:18:16+01:00</updated>
+    <id>http://mavdi.github.io/blog/2014/07/27/cargo-and-cached-remotes</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve been playing around with Rust and Cargo recently. Just seems like the next thing to do. Coming from <code>node</code> and <code>npm</code> world I&rsquo;m used to have versioned packages. Once I noticed that versions were missing from Cargo I assumed it would always get the lastest (For now at least).</p>
+
+<p>Apparently that&rsquo;s not the case. Once a repo is downloaded, it will be cached in your <code>~/.cargo</code> directory. So to get the latest repo (Which you often need to do because of nightly breaks), you either need to delete the contents of this folder or pass a <code>-u</code> option when building. Cargo by default does not updates remotes.</p>
+
+<p>Used cached repos when possible:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cargo build</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Updates all remotes</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cargo -u build</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
 </feed>
